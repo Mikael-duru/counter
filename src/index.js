@@ -15,7 +15,7 @@ function App() {
     <main className="h-screen grid place-content-center font-poppins">
       <section className="container mx-auto text-center">
         <h1 className="text-7xl">Counter</h1>
-        <div className="text-7xl py-9">{count}</div>
+        <div className="text-7xl py-16">{count}</div>
         <div className='flex justify-center gap-5'>
           <button className="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded-full text-xl" onClick={() => setCount(count - 1)}>Decrease</button>
           <button className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-full text-xl" onClick={Increase}>Increase</button>
