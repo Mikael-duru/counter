@@ -7,7 +7,7 @@ import './index.css'
 function App() {
   const [count, setCount] = useState(0);
 
-  const Increase = () => {
+  const increase = () => {
     setCount(count + 1);
   };
 
@@ -18,7 +18,7 @@ function App() {
         <div className="text-7xl py-16">{count}</div>
         <div className='flex justify-center gap-8'>
           <button className="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded-full text-xl" onClick={() => setCount(count - 1)}>Decrease</button>
-          <button className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-full text-xl" onClick={Increase}>Increase</button>
+          <button className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-full text-xl" onClick={increase}>Increase</button>
         </div>
         <button className="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded-full text-xl my-7" onClick={() => setCount(0)}>
             Reset
